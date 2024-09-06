@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ALUMNET</title>
+  <link rel="stylesheet" href="personaldetails.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="homepage.html">ALUMNET</a></div>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="user-profile">
+      <div class="profile-name">
+        <a href="personaldetails.html"><img src="pfp (Custom) (Custom).png" alt="User Profile" class="circular-image"></a>
+      </div>
+      <div class="image-upload">
+        <label for="profile-image-input">
+          <i class="fa-solid fa-pen"></i> Edit Photo
+        </label>
+        <input type="file" id="profile-image-input" accept="image/*">
+        <div class="image-upload">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <ul>
+        <li><a href="personaldetails.html" class="rounded-button">PERSONAL PROFILE</a></li>
+        <li><a href="jobprofile.html" class="rounded-button">JOB PROFILE</a></li>
+        <li><a href="new.html" class="rounded-button">POSTS</a></li>
+      </ul>
+    </aside>
+
+    <section class="profile-container">
+      <h2>Your Profile</h2>
+      <div class="profile-details">
+        <div class="profile-info">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
+          <label for="middle-name">Middle Name:</label>
+          <input type="text" id="middle-name" name="middle-name">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
+          <label for="headline">Headline:</label>
+          <input type="text" id="headline" name="headline">
+          <label for="industry">Industry:</label>
+          <input type="text" id="industry" name="industry">
+        </div>
+        <div class="profile-image-container">
+          </div>
+      </div>
+      <div class="contact-details">
+        <h3>Contact Details</h3>
+        <label for="contact-number">Contact Number:</label>
+        <input type="text" id="contact-number" name="contact-number" required>
+        <label for="email-address">Email Address:</label>
+        <input type="email" id="email-address" name="email-address" required>
+        <label for="physical-address">Physical Address:</label>
+        <textarea id="physical-address" name="physical-address" required></textarea>
+      </div>
+      <div class="social-links">
+        <h3>Social Links</h3>
+        <label for="facebook">Facebook:</label>
+        <input type="url" id="facebook" name="facebook">
+        <label for="twitter">Twitter:</label>
+        <input type="url" id="twitter" name="twitter">
+        <label for="instagram">Instagram:</label>
+        <input type="url" id="instagram" name="instagram">
+        <label for="linkedin">LinkedIn:</label>
+        <input type="url" id="linkedin" name="linkedin">
+      </div>
+      <button type="submit" class="save-profile-button">Save Profile</button>
+    </section>
+  </main

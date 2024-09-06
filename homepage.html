@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUMNET</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="homepage.html"  class="logo-text">ALUMNET</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-picture">
+            <a href="personaldetails.html">
+            <img src="pfp (Custom) (Custom).png" alt="Profile Picture">
+        </a>
+            <div class="profile-dropdown">
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">College</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TOGETHER BEYOND CAMPUS</h1>
+            <p>Connect with alumni and industry professionals.</p>
+            <button><a href="login.html">Get Started</a></button>
+        </div>
+        <div class="hero-form">
+            <h2>Join Our Community</h2>
+            <form>
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number">
+                <label for="college">College:</label>
+                <select id="college" name="college">
+                    <option value="">Select College</option>
+                    <option value="college1">College 1</option>
+                    <option value="college2">College 2</option>
+                    </select>
+                    <button type="submit" onclick="redirectTologin()">Submit</button>
+
+                
+            </form>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="tiles">
+            <div class="tile">
+                <div class="icon">👥</div>
+                <h3>Alumni Directory</h3>
+                <p>A searchable list where members can find and connect with one another.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">👤</div>
+                <h3>Profile Management</h3>
+                <p>Personal profiles where users can add information about themselves, including work details and social media links.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">📰</div>
+                <h3>News and Updates</h3>
+                <p>A section for the latest news, alumni stories, and event announcements.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">📆</div>
+                <h3>Event Management</h3>
+                <p>Tools to organize and promote events such as reunions, webinars, and networking sessions.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">🤝</div>
+                <h3>Mentorship Program</h3>
+                <p>A feature to connect experienced alumni with recent graduates for guidance and support.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">💼</div>
+                <h3>Job Board</h3>
+                <p>A space to share job openings, internships, and career resources.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">💬</div>
+                <h3>Community Forums</h3>
+                <p>Discussion boards where members can talk about different topics and interests.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">$</div>
+                <h3>Donations and Fundraising</h3>
+                <p>Secure options for alumni to donate and support fundraising efforts.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">📱</div>
+                <h3>Social Media Integration</h3>
+                <p>Easy sharing of content on social media.</p>
+            </div>
+            <div class="tile">
+                <div class="icon">🔔</div>
+                <h3>Notifications and Alerts</h3>
+                <p>Email and push notifications to keep alumni informed.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       Copyright&copy; ALUMNET 2024
+      </footer>
+</body>
+</html>

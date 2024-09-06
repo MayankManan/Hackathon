@@ -1,0 +1,91 @@
+<html>
+<head>
+  <title>LOGIN/REGISTER PAGE</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="homepage.html">ALUMNET</a>
+  </div>
+  <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="profile-picture">
+      <a href="personaldetails.html">
+        <img src="pfp (Custom) (Custom).png" alt="Profile Picture">
+    </a>
+        <div class="profile-dropdown">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">College</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type= "button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+      <div class="social-icons">
+        <img scr="facebook.png">
+        <img scr="twitter.png">
+        <img scr="google.png">
+  </div>
+  <form id="login"class="input-group">
+    <input type="text" class="input-field"
+      placeholder="User Id/Email Id" required>
+    <input type="text" class="input-field"
+      placeholder="Enter Password" required>
+      <a href="https://yourwebsite.com/forgot-password">Forgot Password? </a> <br>
+    <input type="checkbox" class="check-box">
+    <span>Remember Me</span>
+    
+    <button type="submit" class="submit-btn" onclick="window.location.href='landing.html'">Log in</button>
+  </form>
+      <form id="register"class="input-group">
+        <input type="text" class="input-field"
+          placeholder="User Id/Email Id" required>
+        <input type="email" class="input-field"
+          placeholder="Create Password" required>
+        <input type="checkbox" class="check-box">
+        <span>I agree to the terms & conditions</span>
+        <a href="Landing.html"><button type="submit" class="submit-btn">Register</button></a>
+      </form>
+  </div>
+  </div>
+  <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+    }
+
+
+    
+  </script>
+  <footer>
+    Copyright&copy; ALUMNET 2024
+   </footer>
+      
+</body>
+</html>

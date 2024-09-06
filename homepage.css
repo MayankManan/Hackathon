@@ -1,0 +1,227 @@
+*{
+    text-decoration: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(208, 196, 196);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #d2964e; /* Golden color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+.logo a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #fff;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 150px;
+}
+
+.profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-dropdown ul li {
+    padding: 10px;
+}
+
+.profile-dropdown ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-content {
+    text-align: left;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.hero-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero-form label {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* ... (previous CSS) ... */
+
+.hero-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures input field width includes padding */
+}
+
+.community-slogan {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+/* ... (previous CSS) ... */
+
+.hero-content button {
+    background-color: #FFD700; /* Darker yellow */
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+}
+.button a {
+    text-decoration: none;
+}
+.hero-content button:hover {
+    background-color: #FFC400;
+}
+
+.why-choose-us {
+    padding: 40px;
+}
+
+.why-choose-us h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.why-choose-us .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.why-choose-us .tile {
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-us .tile:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.why-choose-us .tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.why-choose-us .tile:hover::before {
+    opacity: 1;
+}
+
+.why-choose-us .tile .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* ... (previous CSS) ... */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
